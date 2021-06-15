@@ -1,0 +1,52 @@
+/* HeroDetailComponent's private CSS styles */
+.buttom{
+  width: fit-content;
+  height: fit-content;
+}
+.poetdetail{
+  text-align: center;
+  margin: 5px;
+  margin-top: 25px;
+}
+.example-card {
+  max-width: 45%;
+  float: left;
+  margin: 10px;
+  }
+  .example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+  }
+  
+h2{
+  font-size: 30px;
+  color: rgb(95, 1, 107);
+  /* background-color: azure; */
+  /* background-size: cover; */
+}
+.poetinfor{
+  font-size: 24px;
+  color: rgb(95, 1, 107);
+    font-weight: bold;
+    /* background-color: azure;
+    background-size: auto; */
+}
+  input {
+    font-size: 1em;
+    padding: .5rem;
+  }
+  button {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }

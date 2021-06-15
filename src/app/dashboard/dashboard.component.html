@@ -1,0 +1,13 @@
+
+<div id="slidepoet">
+  <div>
+    <mat-tab-group mat-align-tabs="center">
+      <a *ngFor="let poet of poets" routerLink="/detail/{{poet.id}}">
+        <mat-tab label={{poet.name}}>{{poet.lifetime}}</mat-tab>
+      </a>
+    </mat-tab-group>
+  </div>
+</div>
+<div id="Searchpoet">
+  <app-poet-search></app-poet-search>
+</div>

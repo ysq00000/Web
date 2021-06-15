@@ -1,0 +1,41 @@
+<div class="poetdetail">
+  <div *ngIf="poet">
+    <h2>{{poet.name }} 信息</h2>
+    <div class="poetinfor"><span>id: </span>{{poet.id}}</div>
+    <div>
+      <label for="poet-name" class="poetinfor">诗人姓名 </label>
+      <input id="poet-name" [(ngModel)]="poet.name" placeholder="诗人姓名" />
+      <br> 
+    </div>
+    <button mat-raised-button color="accent" (click)="goBack()" class="buttom">返回</button>
+    <button mat-raised-button color="accent" (click)="save()" class="buttom">保存</button>
+    <div>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{poet.name}}生平经历</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image
+          src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg9.51tietu.net%2Fpic%2F2019-090919%2Fd0y4v3zu3kyd0y4v3zu3ky.jpg&refer=http%3A%2F%2Fimg9.51tietu.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626103628&t=ef339108acaf9f8f8355d8d232c53d09"
+          alt="A Picture">
+        <mat-card-content>
+          <p>
+            {{poet.lifetime}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{poet.name}}代表作</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image
+          src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.jj20.com%2Fup%2Fallimg%2F911%2F020916103253%2F160209103253-1.jpg&refer=http%3A%2F%2Fpic.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626104392&t=bf181cde24fdee1c3b274491fa811da8"
+          alt="A Picture">
+        <mat-card-content>
+          <p>
+            {{poet.poetry}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

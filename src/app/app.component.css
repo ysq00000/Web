@@ -1,0 +1,44 @@
+#page-total-title{
+  text-align: center;
+  /* 外边距 */
+  padding-top: 15px;
+  /* margin-top: 15px; */
+  color: 	#63801e;
+}
+/* 整个网页的样式 */
+#WebPage{
+background-image: url(../../img/pexels-simon-berger-748837.jpg);
+background-size:  100%;
+height: fit-content;
+min-height: 100%;
+/* min-height: fit-content; */
+/* max-height: 200%; */
+}
+#navbar{
+text-align: center;
+size: 100px;
+}
+/* AppComponent's private CSS styles */
+h1 {
+  margin-bottom: 10px;
+  font-size: 42px;
+}
+nav a {
+  padding: 1rem;
+  margin-left: 6px;
+  margin-right: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #706c6ce5;
+  color: #b5e9e6;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  color: rgba(247, 247, 247, 0.835);
+  background-color: #677379;
+}
+nav a:active {
+  background-color: rgb(56, 45, 45);
+}

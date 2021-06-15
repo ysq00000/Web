@@ -1,0 +1,77 @@
+/* DashboardComponent's private CSS styles */
+
+#Searchpoet{
+  height: auto;
+  width: fit-content;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(180, 180, 180);
+}
+
+.mat-tab-group {
+  margin-bottom: 48px;
+  background-color: rgb(19, 73, 70);
+  text-align: center;
+  font-size: 15px;
+  color: rgb(236, 235, 240);
+  tab-size: 100px;
+}
+.mat-tab{
+  text-align: center;
+}
+#slidepoet{
+  height: auto;
+  width: 85%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+/* h2 {
+    text-align: center;
+  }
+  
+  .poets-menu {
+    padding: 0;
+    margin: auto;
+    max-width: 1000px;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  a {
+    background-color: #3f525c;
+    border-radius: 2px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    min-width: 70px;
+    margin: .5rem auto;
+    box-sizing: border-box;
+  
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  
+  @media (min-width: 600px) {
+    a {
+      width: 18%;
+      box-sizing: content-box;
+    }
+  }
+  
+  a:hover {
+    background-color: #000;
+  } */

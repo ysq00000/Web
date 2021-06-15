@@ -1,0 +1,45 @@
+<div class="all">
+    <div class="poetpoetry" id="list">
+        <h2 class="poetinfor">诗人列表</h2>
+        <ul class="poets">
+            <li *ngFor="let poet of poets">
+                <a routerLink="/detail/{{poet.id}}">
+                    <span class="badge">{{poet.id}}</span> {{poet.name}}
+                </a>
+                <button class="delete" title="delete poet" (click)="delete(poet)">x</button>
+            </li>
+        </ul>
+    </div>
+    <div class="poetpoetry" id="add">
+        <div>
+            <label for="new-poet-name" class="labell">诗人姓名：</label>
+            <input id="new-poet-name" #poetName />
+            <br>
+            <label for="new-poet-lifetime" class="labell">诗人生平经历：</label>
+            <textarea id="new-poet-lifetime" #poetLifetime></textarea>
+            <br>
+            <label for="new-poet-poetry" class="labell">诗人代表作：</label>
+            <textarea id="new-poet-poetry" #poetPoetry></textarea> 
+            <br>
+            <!-- (click) passes input value to add() and then clears the input -->
+            <!-- <button class="add-button" 
+            (click)="add(poetName.value,poetLifetime.value,poetPoetry.value); poetName.value=''">
+                添加
+            </button> -->
+            <div class="addbutton">
+                <button mat-flat-button color="basic" (click)="add(poetName.value,poetLifetime.value,poetPoetry.value);
+            poetName.value='';poetLifetime.value='';poetPoetry.value='';">添加</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="slidepoet">
+        <div id="show">
+            <mat-tab-group mat-align-tabs="center">
+                <a *ngFor="let poet of poets" routerLink="/detail/{{poet.id}}">
+                    <mat-tab label={{poet.name}}>{{poet.poetry}}</mat-tab>
+                </a>
+            </mat-tab-group>
+        </div>
+    </div>
+</div>

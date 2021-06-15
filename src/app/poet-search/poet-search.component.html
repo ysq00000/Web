@@ -1,0 +1,17 @@
+<div id="search-component">
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label class="notice">搜索诗人</mat-label>
+      <input #searchBox id="search-box" matInput (input)="search(searchBox.value)">
+    </mat-form-field>
+  </form>
+
+  <ul class="search-result">
+    <li *ngFor="let poet of poets$ | async">
+      <a routerLink="/detail/{{poet.id}}">
+        {{poet.name}}
+      </a>
+    </li>
+  </ul>
+</div>
