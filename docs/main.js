@@ -699,7 +699,7 @@ class AppComponent {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 11, vars: 1, consts: [["id", "WebPage", 1, "container"], ["id", "page-total-title"], ["id", "navbar"], ["routerLink", "/dashboard"], ["routerLink", "/poets"], ["href", "https://blog.csdn.net/ysqxj999/article/details/117912118", 1, "blank"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 11, vars: 1, consts: [["id", "WebPage", 1, "container"], ["id", "page-total-title"], ["id", "navbar"], ["routerLink", "/dashboard"], ["routerLink", "/poets"], ["href", "https://ysq00000.github.io/WebPage/", 1, "blank"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
